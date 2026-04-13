@@ -24,26 +24,13 @@
 
 /*カラースキーム*/
 :root {
-    --mainBlueColor: #617bfa;
-    --mainYellowColor: #f9c54a;
-    &[data-theme="dark"] {
-        --bgThemeColor: #000000; /*#222636*/
-        --bgPlainColor: #000000;
-        --bgThinColor: #333733;
-        --hoverColor: #222522;
-        --pColor: #e8eaed;
-        --linkColor: #7da9fe;
-        --shadowColor: #000000;
-    }
-    &[data-theme="light"] {
-        --bgThemeColor: #ebf0ff;
-        --bgPlainColor: #ffffff;
-        --bgThinColor: #cccccc;
-        --hoverColor: #dddddd;
-        --pColor: #202124;
-        --linkColor: #1558d6;
-        --shadowColor: #7a7a7a;
-    }
+    --bgThemeColor: #ebf0ff;
+    --bgPlainColor: #ffffff;
+    --bgThinColor: #cccccc;
+    --hoverColor: #dddddd;
+    --pColor: #202124;
+    --linkColor: #1558d6;
+    --shadowColor: #7a7a7a;
 }
 
 * {
@@ -52,4 +39,47 @@
     transition: 0.25s;
     line-height: 1.35em;
     font-family: "Myriad", "Noto", sans-serif;
+}
+
+html {
+    padding: 0;
+    background: var(--bgThemeColor);
+    overflow-y: scroll;
+}
+body {
+    margin: 0;
+    position: relative;
+    display: flow-root;
+}
+h1 {
+    text-align: center;
+}
+p {
+    margin: 1em;
+}
+p,
+span,
+h1,
+h2,
+h3,
+th,
+td {
+    color: var(--pColor);
+}
+a {
+    color: var(--linkColor);
+}
+/*positioning*/
+.left {
+    float: left;
+    text-align: left;
+}
+.leftAlone {
+    text-align: left;
+}
+.right {
+    text-align: right;
+}
+.center {
+    text-align: center;
 }
