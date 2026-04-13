@@ -1,0 +1,55 @@
+@font-face {
+    font-family: "Myriad";
+    src: url("/fonts/Myriad.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Noto";
+    src: url("/fonts/NotoSans.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@media (width <= 960px) {
+    .PC_ONLY {
+        display: none !important;
+    }
+}
+@media (960px < width) {
+    .SP_ONLY {
+        display: none !important;
+    }
+}
+
+/*カラースキーム*/
+:root {
+    --mainBlueColor: #617bfa;
+    --mainYellowColor: #f9c54a;
+    &[data-theme="dark"] {
+        --bgThemeColor: #000000; /*#222636*/
+        --bgPlainColor: #000000;
+        --bgThinColor: #333733;
+        --hoverColor: #222522;
+        --pColor: #e8eaed;
+        --linkColor: #7da9fe;
+        --shadowColor: #000000;
+    }
+    &[data-theme="light"] {
+        --bgThemeColor: #ebf0ff;
+        --bgPlainColor: #ffffff;
+        --bgThinColor: #cccccc;
+        --hoverColor: #dddddd;
+        --pColor: #202124;
+        --linkColor: #1558d6;
+        --shadowColor: #7a7a7a;
+    }
+}
+
+* {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    transition: 0.25s;
+    line-height: 1.35em;
+    font-family: "Myriad", "Noto", sans-serif;
+}

@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <!-- GoogleTag -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-65FGJVF0N1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+            gtag("config", "G-65FGJVF0N1");
+        </script>
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="/favicon.ico" />
+        <script src="/theme.js"></script>
+        <link rel="stylesheet" href="/style.css" />
+
+        <meta property="og:site_name" content="南山大学HoYoverse同好会" />
+        <title>南山大学HoYoverse同好会</title>
+        <meta property="og:title" content="南山大学HoYoverse同好会" />
+        <meta name="description" content="HoYoverse同好会は南山大学のサークルです。" />
+        <meta property="og:description" content="南山大学HoYoverse同好会の紹介ページです。" />
+    </head>
+    <body>
+        <header></header>
+        <script>
+            (async () => {
+                const res = await fetch("/header.html");
+                document.querySelector("header").innerHTML = await res.text();
+            })();
+        </script>
+
+        <!-- ここより下に書いてください -->
+
+        <h1>HoYoverse同好会のサイトへようこそ！</h1>
+        <div style="margin: 0 2vw">
+            <p class="center">
+                南山大学HoYoverse同好会は2025年3月に設立された新しめのサークルです。 大学内でゲームをやっている人は意外と多いながら、趣味としては話しづらい部類なので話題に上がることは少ないですよね。
+                それでも同じジャンルについて語り合いたいと思い団体設立に至りました。
+                兼サーOK！ゲーム系のサークルは東方同好会やアニメ研究会もあるので、他のコンテンツも楽しんでいるよ～という方はクラブガイドを見てみることをおすすめします。
+            </p>
+        </div>
+
+        <h1>活動概要</h1>
+        <div style="margin: 0 2vw">
+            <p class="center">作成中…</p>
+        </div>
+
+        <!-- ここより上に書いてください -->
+        <footer></footer>
+        <script>
+            (async () => {
+                const res = await fetch("/footer.html");
+                document.querySelector("footer").innerHTML = await res.text();
+            })();
+        </script>
+    </body>
+</html>
