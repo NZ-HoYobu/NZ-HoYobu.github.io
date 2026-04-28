@@ -51,11 +51,10 @@ body {
     position: relative;
     display: flow-root;
 }
-h1 {
+h1,
+h2,
+h3 {
     text-align: center;
-}
-p {
-    margin: 1em;
 }
 p,
 span,
@@ -82,4 +81,21 @@ a {
 }
 .center {
     text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 1em 5vw 3em;
+    width: stretch;
+}
+th {
+    text-align: center;
+    background: var(--bgPlainColor);
+    width: 8em;
+}
+th,
+td {
+    font-weight: unset;
+    border: 1px solid var(--pColor);
+    padding: 0.8em;
 }
