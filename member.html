@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <!-- GoogleTag -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-65FGJVF0N1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+            gtag("config", "G-65FGJVF0N1");
+        </script>
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="stylesheet" href="/style.css" />
+
+        <meta property="og:site_name" content="南山大学HoYoverse同好会" />
+        <title>メンバー概要 - 南山大学HoYoverse同好会</title>
+        <meta property="og:title" content="メンバー概要 - 南山大学HoYoverse同好会" />
+        <meta name="description" content="南山ほよ部のメンバー分布をご紹介します。" />
+        <meta property="og:description" content="南山ほよ部のメンバー分布をご紹介します。" />
+    </head>
+    <body>
+        <header></header>
+        <script>
+            (async () => {
+                const res = await fetch("/header.html");
+                document.querySelector("header").innerHTML = await res.text();
+            })();
+        </script>
+
+        <!-- ここより下に書いてください -->
+
+        <h1>メンバー概要</h1>
+        <div style="margin: 0 5vw">
+            <p class="center">
+                南山大学HoYoverse同好会のメンバー分布をご紹介します！<br />
+                2026年6月現在、1年生から4年生まで幅広く所属しています。学部は少し偏りがあるかも…？<br />
+                他のサークルとの活動を両立している方も多いです。
+            </p>
+        </div>
+
+        <table>
+            <tr>
+                <th rowspan="3">遊んでいる<br />タイトル</th>
+                <td width="40%">原神</td>
+                <td width="25%">7人</td>
+            </tr>
+            <tr>
+                <td>スタレ</td>
+                <td>6人</td>
+            </tr>
+            <tr>
+                <td>ゼンゼロ</td>
+                <td>2人</td>
+            </tr>
+            <tr>
+                <th rowspan="4">学年</th>
+                <td>1年生</td>
+                <td>3人</td>
+            </tr>
+            <tr>
+                <td>2年生</td>
+                <td>6人</td>
+            </tr>
+            <tr>
+                <td>3年生</td>
+                <td>2人</td>
+            </tr>
+            <tr>
+                <td>4年生</td>
+                <td>1人</td>
+            </tr>
+            <tr>
+                <th rowspan="4">学部</th>
+                <td>人文学部</td>
+                <td>9人</td>
+            </tr>
+            <tr>
+                <td>法学部</td>
+                <td>2人</td>
+            </tr>
+            <tr>
+                <td>理工学部</td>
+                <td>2人</td>
+            </tr>
+            <tr>
+                <td>国際教養学部</td>
+                <td>1人</td>
+            </tr>
+
+            <tr>
+                <th rowspan="2">性別</th>
+                <td>男性</td>
+                <td>9人</td>
+            </tr>
+            <tr>
+                <td>女性</td>
+                <td>3人</td>
+            </tr>
+            <tr>
+                <th>兼サー例</th>
+                <td colspan="2">
+                    東方研究会 (異なる分野を扱う同系統のサークルです)<br />
+                    がくそん (広告出稿のきっかけになりました)<br />
+                    テニス同好会
+                </td>
+            </tr>
+        </table>
+
+        <p class="center"><a href="/">もどる</a></p>
+        <br /><br />
+        <!-- ここより上に書いてください -->
+        <footer></footer>
+        <script>
+            (async () => {
+                const res = await fetch("/footer.html");
+                document.querySelector("footer").innerHTML = await res.text();
+            })();
+        </script>
+    </body>
+</html>
