@@ -86,7 +86,9 @@ const observer = new MutationObserver((mutations, obs) => {
             return `<a href="${crumb.url}" class="breadcrumb-link">${crumb.title}</a>`;
         });
         breadcrumbContainer.innerHTML = htmlSegments.join(" &gt; ");
-
+        setTimeout(() => {
+            breadcrumbContainer.scrollLeft = breadcrumbContainer.scrollWidth;
+        }, 100);
         // パンくずリストを複数回生成されることは通常ない
         obs.disconnect();
     }
