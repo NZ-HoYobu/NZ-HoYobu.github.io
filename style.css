@@ -48,8 +48,17 @@ html {
 }
 body {
     margin: 0;
+    margin-top: 2em;
     position: relative;
     display: flow-root;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2em;
+    background-color: gainsboro;    
 }
 h1,
 h2,
@@ -83,19 +92,18 @@ a {
     text-align: center;
 }
 
-
 .dualView {
     margin: 1em 3%;
 }
 @media (width > 960px) {
-  .dualViewContainer {
-    display: flex;
-    margin: 0 1%;
-    flex-wrap: nowrap;
-  }
-  .dualView {
-    flex: 1;
-  }
+    .dualViewContainer {
+        display: flex;
+        margin: 0 1%;
+        flex-wrap: nowrap;
+    }
+    .dualView {
+        flex: 1;
+    }
 }
 
 table {
