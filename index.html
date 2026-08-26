@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <!-- GoogleTag -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-65FGJVF0N1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+            gtag("config", "G-65FGJVF0N1");
+        </script>
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="stylesheet" href="/style.css" />
+
+        <meta property="og:site_name" content="南山大学HoYoverse同好会" />
+        <title>南山大学HoYoverse同好会</title>
+        <meta property="og:title" content="南山大学HoYoverse同好会" />
+        <meta name="description" content="HoYoverse同好会は南山大学のサークルです。" />
+        <meta property="og:description" content="南山大学HoYoverse同好会の紹介ページです。" />
+    </head>
+    <body>
+        <header></header>
+        <script>
+            (async () => {
+                const res = await fetch("/header.html");
+                document.querySelector("header").innerHTML = await res.text();
+            })();
+        </script>
+
+        <!-- ここより下に書いてください -->
+
+        <h1>HoYoverse同好会のご紹介</h1>
+        <div style="margin: 0 5vw">
+            <p class="center">
+                南山大学HoYoverse同好会は2026年3月に設立された新しめのサークルです。 <br />
+                大学内でゲームをやっている人は意外と多いながら、趣味としては話しづらい部類とされていますね。それ用のサークルならそんなことはない！<br />
+                兼サーOK！ACGサークルは東方同好会やアニメ研究会もあるので、他のコンテンツも楽しんでいるよ～という方はクラブガイドを見てみることをおすすめします。
+            </p>
+            <p class="center">
+                <a href="/member.html">学部などのメンバー分布の紹介を作成しました！</a>
+            </p>
+            <div class="center">
+                <img src="/img/activity_260415.avif" alt="サークル活動の様子" style="width: min(90vw, 400px)" />
+            </div>
+        </div>
+
+        <h2>活動概要</h2>
+        <table>
+            <tr>
+                <th>活動日時</th>
+                <td>
+                    水曜日 4限<br />
+                    月に約4回の活動を行っています。その他、不定期にイベントに参加することを考えています。
+                </td>
+            </tr>
+            <tr>
+                <th>活動場所</th>
+                <td>
+                    S棟 - S51教室であることが多い<br />
+                    有志団体は教室予約の優先順位が低いため、毎度同じ教室になるとは限りません。確定場所については、予約日および活動日にSNSでお知らせしています。
+                </td>
+            </tr>
+            <tr>
+                <th>連絡手段</th>
+                <td>
+                    主にDiscordを使用しています。活動場所の連絡等に使われるほか、攻略相談や記録共有にもお使いいただけるチャンネルがあります！<br />
+                    新歓の時期のみ、LINEオープンチャットも運用しています。
+                </td>
+            </tr>
+            <tr>
+                <th>部費</th>
+                <td>無料<br />イベント参加時の交通費などは自費</td>
+            </tr>
+        </table>
+
+        <h2>入会について</h2>
+        <div style="margin: 0 5vw">
+            <p class="center">
+                入会はいつでも受け付けています！活動時間にお越しいただくか、XのDMまたはメンションでご連絡ください。<br />
+                Discordの利用に慣れていない方は、使い方の説明をいたしますのでご相談ください。<br />
+                学生課における手続きの都合上、現時点では他大学からの入会は受け付けておりません。
+            </p>
+        </div>
+
+        <h2>便利情報を公開中！</h2>
+        <div style="margin: 0 5vw">
+            <p class="center">
+                <a href="/useful-info/list.html">便利情報ページ</a>では、HoYoverse作品に関連するデータをまとめています。<br />
+                出来たてなので情報量は少ないですが、どこかに需要があれば嬉しいです。
+            </p>
+        </div>
+        <br /><br />
+        <!-- ここより上に書いてください -->
+        <footer></footer>
+        <script>
+            (async () => {
+                const res = await fetch("/footer.html");
+                document.querySelector("footer").innerHTML = await res.text();
+            })();
+        </script>
+    </body>
+    <script src="/breadcrumb.js"></script>
+</html>
