@@ -1,12 +1,6 @@
 const pageTree = {
     "index.html": { title: "南山大学HoYoverse同好会", isIndex: true },
     "member.html": { title: "メンバー概要" },
-    "useful-info": {
-        "giEngNames.html": { title: "原神英語名" },
-        "hsrEngNames.html": { title: "スターレイル英語名" },
-        "zzzEngNames.html": { title: "ゼンゼロ英語名" },
-        "list.html": { title: "便利情報一覧", isIndex: true },
-    },
 };
 
 function generateBreadcrumbs(pageTree) {
@@ -74,7 +68,6 @@ function generateBreadcrumbs(pageTree) {
 const observer = new MutationObserver((mutations, obs) => {
     const targetElement = document.getElementById("breadcrumb");
     if (targetElement) {
-        console.log("要素が見つかりました");
         const breadcrumbContainer = document.getElementById("breadcrumb");
         const breadcrumbs = generateBreadcrumbs(pageTree);
 
